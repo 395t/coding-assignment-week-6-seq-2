@@ -68,6 +68,10 @@ done
 
 <img src='./imgs/PARAMETERS.png' width="40%">
 
+<img src='./imgs/EVALUATION_LOSS.png' width="40%">
+
+<img src='./imgs/EVALUATION_ACCURACY.png' width="40%">
+
 - Ipython notebooks can be organized in `notebooks`.
 
 ## Ablation study
