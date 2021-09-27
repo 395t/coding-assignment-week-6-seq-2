@@ -40,7 +40,7 @@ done
 
 ### XLNet
 
-We used two types of architecture, [base cased](https://huggingface.co/xlnet-base-cased) a 12-layer, 768-hidden, 12-heads and a [large cased](https://huggingface.co/xlnet-large-cased)  24-layer, 1024-hidden, 16-heads evaluated on the nine  text classification tasks.Based on [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237) paper we used  a pre-trained  model implemented by hugging-face.
+We used two types of architecture, [base cased](https://huggingface.co/xlnet-base-cased) a 12-layer, 768-hidden, 12-heads and a [large cased](https://huggingface.co/xlnet-large-cased)  24-layer, 1024-hidden, 16-heads evaluated on the nine  text classification tasks.Based on [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237) paper implemented by hugging-face.
 ### Roberta-Base
 
 We used the a 125M parameter pre-trained [roberta-base](https://huggingface.co/roberta-base) model card implemented by hugging-face based on the [RoBERTa: A Robustly Optimized BERT Pretraining Approach paper ](https://arxiv.org/abs/1907.11692).Model pre-trained using only masked language modeling (MLM) on raw texts with automatic labelling.
