@@ -1,4 +1,4 @@
-# coding-template
+# Text-classification 
 
 ## Summary
 
@@ -70,6 +70,35 @@ done
 
 - Ipython notebooks can be organized in `notebooks`.
 
-## Reference
+## Ablation study
 
-Any code that you borrow or other reference should be properly cited.
+### Fine-tune v.s. zero-shot
+
+All evaluations in the above sections are zero-shot results — the pretrained models are asked to predict the testing dataset without fine-tuning on it. In this section, we compare the results between fine-tune and zero-shot on selected dataset. We first compared finetuned models and zero-shot models on dataset sst2 and mrpn. The plot below demonsrates that finetuning can improve the model accuracy by almost 100%. 
+
+<p align="left">
+    <img src="./imgs/sst_trainedv.s.untrained.png" width="600" height="400">
+    <img src="./imgs/mrpc_trainedv.s.untrained.png" width="600" height="400">
+</p>
+
+### Half precision v.s. single precision 
+One of the most interesting option to run transformer like model is the floating point precision. It is common to use mixed precision (half precision: fp16) to improve training speed. There are mainly 3 reasons to favor mixed precision training in practice:
+* It speeds training by almost 2x.  
+* It consumes much less GPU memory. In the case of large transformer model such as GPT-J (6B parameters), even single batch size takes 24GB GPU memory in float32 precision. Therefore, it is a must to use mixed precision to fit big transformers in most GPUs unless exploring model parallelism.  
+* ZeRO Optimizations which offload GPU memory to CPU during some stages of training only supports half precision. 
+
+Therefore, in this section, we conducted an ablation study on half precision v.s. single precision. The focus is to examine if half precision leads to any accuracy loss. And the following plot demonsrates that there is no significant evaluation accuracy loss when dropping half precision.
+
+<p align="left">
+    <img src="./imgs/eval_acc_fp16_fp32.png" width="600" height="300">
+</p>
+
+### Base model v.s. large model
+
+One of the gold standard in transformer model is the bigger the better. In this section, we take a closer on this standard on our datasets. We selected BERT-base, BERT-large, XLNet and XLNet-large to conduct the comparison. We also normalized the accuracy by the number of parameters or the per step time to see if there is a diminishing effect to increase model size.
+
+### Cased v.s. uncased
+
+Most pretrained models come with two options — cased and uncased. Most uncased models are pretrained on lower-cased English text. In this section, we examine if the choice of cased/uncased pretrained models can lead to a difference in the downstream tasks. 
+
+
