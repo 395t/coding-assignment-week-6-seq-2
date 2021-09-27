@@ -102,9 +102,14 @@ One of the gold standard in transformer model is the bigger the better. In this 
     <img src="./imgs/samples_seconds_base_large.png" width="600" height="300">
 </p>
 
+The above plots showed that increasing the number of parameters by 3X on BERT model leads to roughly 10% improvement in accuracy. The runtime overhead is about 5X. Therefore, the complexity cost of increasing model parameters is more than the accuracy gain.
 
 ### Cased v.s. uncased
 
 Most pretrained models come with two options — cased and uncased. Most uncased models are pretrained on lower-cased English text. In this section, we examine if the choice of cased/uncased pretrained models can lead to a difference in the downstream tasks. 
 
+The plot below shows that there is no significant accuracy difference on tasks sst2 and mrpc between cased BERT and uncased BERT.
 
+<p align="left">
+    <img src="./imgs/cased_vs_uncased.png" width="600" height="300">
+</p>
