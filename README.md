@@ -66,6 +66,8 @@ done
 
 <img src='./imgs/XLNET_LARGE_LOSS.png' width="40%">
 
+<img src='./imgs/PARAMETERS.png' width="40%">
+
 - Ipython notebooks can be organized in `notebooks`.
 
 ## Reference
