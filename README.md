@@ -51,9 +51,9 @@ We used the a 125M parameter pre-trained [roberta-base](https://huggingface.co/r
 We used a 24-layer, 1024-hidden, 16-heads, 340M parameters  pre-trained [bert-uncased](https://huggingface.co/bert-base-uncased) model card implemented by hugging-face, based on the [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding paper](https://arxiv.org/abs/1810.04805). Model was pre-trained using both masked language modeling (MLM) and next sentence prediction (NSP),on large raw texts without human labelling.
 
 
-### Albert
+### Albert-Base
 
-We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card implemented [Albert](https://huggingface.co/transformers/model_doc/albert.html) that is base on the [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations paper](https://arxiv.org/abs/1909.11942).Model was pre-trained using both masked language modelling (MLM) and sentence ordering prediction (SOP) on a large corpus of English data on raw texts only without humans labels,labels are generated automatically texts.
+We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card implemented [Albert-base](https://huggingface.co/transformers/model_doc/albert.html) that is base on the [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations paper](https://arxiv.org/abs/1909.11942).Model was pre-trained using both masked language modelling (MLM) and sentence ordering prediction (SOP) on a large corpus of English data on raw texts only without humans labels,labels are generated automatically texts.
 
 <img src='./imgs/ALBERT_BASE_ACCURACY.png' width="40%">
 
