@@ -195,6 +195,9 @@ We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card i
 
 <img src='./imgs/EVALUATION_ACCURACY.png' width="40%">
 
+All models had higher loss values for stsb task. This is possibly because stsb involves understanding context and comparing two different sentences. This possibly means, for stsb the models need for fine-tuning compared to the rest. Among all the models Bert-large-cased had higher losses overall, possibly because it is looking for stricter quality control. This implies the Bert-large-cased needs more fine-tuning compared to the rest.
+
+Overall all models had close to random accuracy for most tasks. This shows without finetuning the models are not reliable. All models had similar accuracy for sst2 dataset. Roberta-base had higher accuracy on mrpc dataset. Whereas all models performed poorly mnli tasks, possibly because it involves reasoning. Surprisingly Roberta-base and XL-net-large-cased performed poorly compared to all the other models at qqp tasks.
 - Ipython notebooks can be organized in `notebooks`.
 
 ## Ablation study
