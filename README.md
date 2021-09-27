@@ -140,6 +140,25 @@ done
 
 - Write-up of your findings and conclusions.
 
+## Models
+
+### XLNet
+
+We used two types of architecture, [base cased](https://huggingface.co/xlnet-base-cased) a 12-layer, 768-hidden, 12-heads and a [large cased](https://huggingface.co/xlnet-large-cased)  24-layer, 1024-hidden, 16-heads evaluated on the nine  text classification tasks.Based on [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/abs/1906.08237) paper implemented by hugging-face.
+### Roberta-Base
+
+We used the a 125M parameter pre-trained [roberta-base](https://huggingface.co/roberta-base) model card implemented by hugging-face based on the [RoBERTa: A Robustly Optimized BERT Pretraining Approach paper ](https://arxiv.org/abs/1907.11692).Model pre-trained using only masked language modeling (MLM) on raw texts with automatic labelling.
+
+
+### Bert-Large
+
+We used a 24-layer, 1024-hidden, 16-heads, 340M parameters  pre-trained [bert-uncased](https://huggingface.co/bert-base-uncased) model card implemented by hugging-face, based on the [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding paper](https://arxiv.org/abs/1810.04805). Model was pre-trained using both masked language modeling (MLM) and next sentence prediction (NSP),on large raw texts without human labelling.
+
+
+### Albert-Base
+
+We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card implemented [Albert-base](https://huggingface.co/transformers/model_doc/albert.html) that is base on the [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations paper](https://arxiv.org/abs/1909.11942).Model was pre-trained using both masked language modelling (MLM) and sentence ordering prediction (SOP) on a large corpus of English data on raw texts only without humans labels,labels are generated automatically texts.
+
 <img src='./imgs/ALBERT_BASE_ACCURACY.png' width="40%">
 
 <img src='./imgs/ALBERT_BASE_LOSS.png' width="40%">
@@ -171,6 +190,10 @@ done
 <img src='./imgs/XLNET_LARGE_LOSS.png' width="40%">
 
 <img src='./imgs/PARAMETERS.png' width="40%">
+
+<img src='./imgs/EVALUATION_LOSS.png' width="40%">
+
+<img src='./imgs/EVALUATION_ACCURACY.png' width="40%">
 
 - Ipython notebooks can be organized in `notebooks`.
 
