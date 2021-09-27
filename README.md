@@ -97,6 +97,12 @@ Therefore, in this section, we conducted an ablation study on half precision v.s
 
 One of the gold standard in transformer model is the bigger the better. In this section, we take a closer on this standard on our datasets. We selected BERT-base, BERT-large, XLNet and XLNet-large to conduct the comparison. We also normalized the accuracy by the number of parameters or the per step time to see if there is a diminishing effect to increase model size.
 
+<p align="left">
+    <img src="./imgs/base_vs_large.png" width="600" height="300">
+    <img src="./imgs/samples_seconds_base_large.png" width="600" height="300">
+</p>
+
+
 ### Cased v.s. uncased
 
 Most pretrained models come with two options — cased and uncased. Most uncased models are pretrained on lower-cased English text. In this section, we examine if the choice of cased/uncased pretrained models can lead to a difference in the downstream tasks. 
