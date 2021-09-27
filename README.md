@@ -159,13 +159,13 @@ We used a 24-layer, 1024-hidden, 16-heads, 340M parameters  pre-trained [bert-un
 
 We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card implemented [Albert-base](https://huggingface.co/transformers/model_doc/albert.html) that is base on the [ALBERT: A Lite BERT for Self-supervised Learning of Language Representations paper](https://arxiv.org/abs/1909.11942).Model was pre-trained using both masked language modelling (MLM) and sentence ordering prediction (SOP) on a large corpus of English data on raw texts only without humans labels,labels are generated automatically texts.
 
-<img src='./imgs/ALBERT_BASE_ACCURACY.png' width="40%">
+<!-- <img src='./imgs/ALBERT_BASE_ACCURACY.png' width="40%"> -->
 
-<img src='./imgs/ALBERT_BASE_LOSS.png' width="40%">
+<!-- <img src='./imgs/ALBERT_BASE_LOSS.png' width="40%"> -->
 
-<img src='./imgs/BERT_BASE_ACCURACY.png' width="40%">
+<!-- <img src='./imgs/BERT_BASE_ACCURACY.png' width="40%"> -->
 
-<img src='./imgs/BERT_BASE_LOSS.png' width="40%">
+<!-- <img src='./imgs/BERT_BASE_LOSS.png' width="40%"> -->
 
 <img src='./imgs/BERT_BASE_RUNTIME.png' width="40%">
 
@@ -173,21 +173,21 @@ We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card i
 
 <img src='./imgs/BERT_BASE_STEPS.png' width="40%">
 
-<img src='./imgs/BERT_LARGE_ACCURACY.png' width="40%">
+<!-- <img src='./imgs/BERT_LARGE_ACCURACY.png' width="40%"> 
 
-<img src='./imgs/BERT_LARGE_LOSS.png' width="40%">
+<img src='./imgs/BERT_LARGE_LOSS.png' width="40%"> 
 
 <img src='./imgs/ROBERTA_ACCURACY.png' width="40%">
 
-<img src='./imgs/ROBERTA_LOSS.png' width="40%">
+<img src='./imgs/ROBERTA_LOSS.png' width="40%"> 
 
 <img src='./imgs/XLNET_ACCURACY.png' width="40%">
 
-<img src='./imgs/XLNET_LOSS.png' width="40%">
+<img src='./imgs/XLNET_LOSS.png' width="40%"> 
 
 <img src='./imgs/XLNET_LARGE_ACCURACY.png' width="40%">
 
-<img src='./imgs/XLNET_LARGE_LOSS.png' width="40%">
+<img src='./imgs/XLNET_LARGE_LOSS.png' width="40%"> -->
 
 <img src='./imgs/PARAMETERS.png' width="40%">
 
