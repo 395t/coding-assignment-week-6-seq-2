@@ -167,11 +167,26 @@ We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card i
 
 <!-- <img src='./imgs/BERT_BASE_LOSS.png' width="40%"> -->
 
-<img src='./imgs/BERT_BASE_RUNTIME.png' width="40%">
+<p align="left">
+    <img src='./imgs/BERT_BASE_RUNTIME.png' width="400" height="300">
+    <img src='./imgs/BERT_BASE_SAMPLES.png' width="400" height="300">
+</p>
 
-<img src='./imgs/BERT_BASE_SAMPLES.png' width="40%">
+<p align="left">
+    <img src='./imgs/BERT_BASE_STEPS.png' width="400" height="300">
+    <img src='./imgs/PARAMETERS.png' width="400" height="300">
+</p>
 
-<img src='./imgs/BERT_BASE_STEPS.png' width="40%">
+<p align="left">
+    <img src='./imgs/EVALUATION_LOSS.png' width="400" height="300">
+    <img src='./imgs/EVALUATION_ACCURACY.png' width="400" height="300">
+</p>
+
+<!-- <img src='./imgs/BERT_BASE_RUNTIME.png' width="40%"> -->
+
+<!-- <img src='./imgs/BERT_BASE_SAMPLES.png' width="40%"> -->
+
+<!-- <img src='./imgs/BERT_BASE_STEPS.png' width="40%"> -->
 
 <!-- <img src='./imgs/BERT_LARGE_ACCURACY.png' width="40%"> 
 
@@ -189,11 +204,11 @@ We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card i
 
 <img src='./imgs/XLNET_LARGE_LOSS.png' width="40%"> -->
 
-<img src='./imgs/PARAMETERS.png' width="40%">
+<!-- <img src='./imgs/PARAMETERS.png' width="40%"> -->
 
-<img src='./imgs/EVALUATION_LOSS.png' width="40%">
+<!-- <img src='./imgs/EVALUATION_LOSS.png' width="40%"> -->
 
-<img src='./imgs/EVALUATION_ACCURACY.png' width="40%">
+<!-- <img src='./imgs/EVALUATION_ACCURACY.png' width="40%"> -->
 
 All models had higher loss values for stsb task. This is possibly because stsb involves understanding context and comparing two different sentences. This possibly means, for stsb the models need for fine-tuning compared to the rest. Among all the models Bert-large-cased had higher losses overall, possibly because it is looking for stricter quality control. This implies the Bert-large-cased needs more fine-tuning compared to the rest.
 
