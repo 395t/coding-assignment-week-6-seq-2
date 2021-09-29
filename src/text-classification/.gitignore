@@ -1,2 +1,8 @@
 saved_dir/*
 wandb
+saved_dir_trained
+saved_dir_trainedfp16
+trained_saved_dir
+untrained_saved_dir
+run_experiments_bert_wandb.sh
+run_experiments_wandb.sh

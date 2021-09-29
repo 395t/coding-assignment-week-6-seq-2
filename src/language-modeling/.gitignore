@@ -1,0 +1,3 @@
+wandb
+save_dir
+run_multinode_experiments.sh
