@@ -168,18 +168,18 @@ We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card i
 <!-- <img src='./imgs/BERT_BASE_LOSS.png' width="40%"> -->
 
 <p align="left">
-    <img src='./imgs/BERT_BASE_RUNTIME.png' width="400" height="300">
-    <img src='./imgs/BERT_BASE_SAMPLES.png' width="400" height="300">
+    <img src='./imgs/BERT_BASE_RUNTIME.png' width="480" height="360">
+    <img src='./imgs/BERT_BASE_SAMPLES.png' width="480" height="360">
 </p>
 
 <p align="left">
-    <img src='./imgs/BERT_BASE_STEPS.png' width="400" height="300">
-    <img src='./imgs/PARAMETERS.png' width="400" height="300">
+    <img src='./imgs/BERT_BASE_STEPS.png' width="480" height="360">
+    <img src='./imgs/PARAMETERS.png' width="480" height="360">
 </p>
 
 <p align="left">
-    <img src='./imgs/EVALUATION_LOSS.png' width="400" height="300">
-    <img src='./imgs/EVALUATION_ACCURACY.png' width="400" height="300">
+    <img src='./imgs/EVALUATION_LOSS.png' width="480" height="360">
+    <img src='./imgs/EVALUATION_ACCURACY.png' width="480" height="360">
 </p>
 
 <!-- <img src='./imgs/BERT_BASE_RUNTIME.png' width="40%"> -->
@@ -222,8 +222,8 @@ Overall all models had close to random accuracy for most tasks. This shows witho
 All evaluations in the above sections are zero-shot results — the pretrained models are asked to predict the testing dataset without fine-tuning on it. In this section, we compare the results between fine-tune and zero-shot on selected dataset. We first compared finetuned models and zero-shot models on dataset sst2 and mrpn. The plot below demonsrates that finetuning can improve the model accuracy by almost 100%. 
 
 <p align="left">
-    <img src="./imgs/sst_trainedv.s.untrained.png" width="600" height="400">
-    <img src="./imgs/mrpc_trainedv.s.untrained.png" width="600" height="400">
+    <img src="./imgs/sst_trainedv.s.untrained.png" width="900" height="600">
+    <img src="./imgs/mrpc_trainedv.s.untrained.png" width="900" height="600">
 </p>
 
 ### Half precision v.s. single precision 
@@ -235,7 +235,7 @@ One of the most interesting option to run transformer like model is the floating
 Therefore, in this section, we conducted an ablation study on half precision v.s. single precision. The focus is to examine if half precision leads to any accuracy loss. And the following plot demonsrates that there is no significant evaluation accuracy loss when dropping half precision.
 
 <p align="left">
-    <img src="./imgs/eval_acc_fp16_fp32.png" width="600" height="300">
+    <img src="./imgs/eval_acc_fp16_fp32.png" width="900" height="450">
 </p>
 
 ### Base model v.s. large model
@@ -243,8 +243,8 @@ Therefore, in this section, we conducted an ablation study on half precision v.s
 One of the gold standard in transformer model is the bigger the better. In this section, we take a closer on this standard on our datasets. We selected BERT-base, BERT-large, XLNet and XLNet-large to conduct the comparison. We also normalized the accuracy by the number of parameters or the per step time to see if there is a diminishing effect to increase model size.
 
 <p align="left">
-    <img src="./imgs/base_vs_large.png" width="600" height="300">
-    <img src="./imgs/samples_seconds_base_large.png" width="600" height="300">
+    <img src="./imgs/base_vs_large.png" width="900" height="450">
+    <img src="./imgs/samples_seconds_base_large.png" width="900" height="450">
 </p>
 
 The above plots showed that increasing the number of parameters by 3X on BERT model leads to roughly 10% improvement in accuracy. The runtime overhead is about 5X. Therefore, the complexity cost of increasing model parameters is more than the accuracy gain.
@@ -256,7 +256,7 @@ Most pretrained models come with two options — cased and uncased. Most uncased
 The plot below shows that there is no significant accuracy difference on tasks sst2 and mrpc between cased BERT and uncased BERT.
 
 <p align="left">
-    <img src="./imgs/cased_vs_uncased.png" width="600" height="300">
+    <img src="./imgs/cased_vs_uncased.png" width="900" height="450">
 </p>
 
 
@@ -271,3 +271,57 @@ We don't have the resources to run GPT-3 model. Instead, we compared GPT-2 model
 |GPT-2 large  | 19.4 | 16.0 | 774M |
 |GPT-NEO base | 28.9 | 23.2 | 125M |
 |GPT-NEO large| 14.6 | 12.7 | 1300M|
+
+We can take a look what these language models generate if we prompt the model "How to teach a deep learning class?"
+
+## GPT-NEO large finetuned on Wikitext2
+```
+How to teach a deep learning class? 
+
+This article gives you the step by step guide to teaching a deep learning class in a way that leverages the instructor — the class instructor — as the primary teacher of the concepts in the course. This is a time consuming process, and there is no @-@ substitute for having an experienced and engaged instructor in the classroom teaching your students. In the past, deep learning training was conducted in a way that emphasized memorization and finding the perfect answer, instead of showing how the model was built. Deep learning trainers like myself are more likely to change their approach if given the opportunity, in order to improve the quality of their students ’ understanding. It is essential that the trainer listen to what their students think, understand Column 1 and 5, and adapt his or her approach to give students more choices and reconstructed examples. This article provides guidelines for instructors on how to teach and reinforce deep learning concepts, and there are some guidelines for clients who plan to implement deep learning projects or models in their organization. Finally, you can search for full video tutorials to get a sense of the basic skills you must master to teach a deep learning course in your organization or business. How to teach a deep learning class and gain the required knowledge to teach it to your students including tips and techniques used by trainers
+```
+
+## GPT-NEO base
+```
+How to teach a deep learning class? 
+
+He was asked “ How to Teach a Singulist class? ” she replied, “ A deep learning class! ” It turned out that what he was taught at KUDOS, was almost entirely black speaking, and a massive amount of colour had to be learnt. This — and the teacher had other options — worked perfectly and unlocked much of the blackness in the world — the world felt less like space, and had an almost entirely black interior, or white, than a dusty white like skin from a trumpet, a lioness, a beetle.
+ His course taught the basic subject and history of traditional Chinese, and the many different civilisations across the Western world. This gave her Column of Classes ( BCTs ) and Teaching the Civilisation to Knowledge Program reconstructed the Chinese lexicon, making it more relevant to history, history classes, and teaching English and @-@ Chinese.
+ = = Professional history = =
+ " Sosaksoff and Wapoma " in Inclusive Classes was the second in a pair of post @-@graduate solo video exams in 2009. It became his Ph.D. thesis in 2010 and his Researcher thesis in 2012. His video work including @-@ teaching videos and
+``` 
+
+## GPT-2 large
+```
+How to teach a deep learning class?
+
+Pros and cons
+
+Pros:
+
+I have been making deep learning videos for almost 3 years now and all my lessons have passed with 99.9% (mine are around 3%) students. Why? Because I stick to a high amount of content, I teach at the right time of the day, I come up with new and innovative ways to teach, and I allow you to iterate from one lesson to the next. Plus, because I have hours of hours of footage that I am able to take home and practice for my students!
+
+Cons:
+
+One of the biggest problems with today's traditional classroom is that teachers tend to prioritize their time better than their students' time. Columns and stacks of books are easy, but learning material often requires prolonged and dedicated reconstructed patterns, especially with deep learning. Let's face it, teaching a deeply-connected deep learning course is no easier than teaching some introductory programming for example. Or the more times I do a deep learning course, the more I struggle with remembering everything about the topic, understanding what is being described, and laying the foundation to build your own class. How much did you spend on this course and how much did you spend on preparing?
+
+For more guidance on teaching deep learning
+```
+
+## GPT-2 medium
+```
+How to teach a deep learning class? 
+
+This article gives you a step by step example.
+ When I was teaching MSc in Computer Science at the University of Exeter I had this year @-@ long lecture class, led by a professor named Tim P. Ross. The class is about learning about Deep Neural Networks, and how they are used in teaching, machine learning and AI. I thought that the way to cover Deep Neural Networks in detail would be to use a machine learning library, but my students knew that I was about to teach them a trivial example called " probabilistic programming " ( from the book Neural Networks in Action ), where I showed them that a trained model would look like this :
+ This example is a wrapper Columnar Classifier ( BCL ), but there are thousands of such libraries, reconstructed from paper sources, on the net. For example, Numpy introduced an alternative classifier, based on training with f1. This is useful if one can perform more sophisticated training algorithms using lower bound and max function arguments than in the implementation of Numpy. In addition, you can use a neural net library to store context information, and receive training inputs from other networks. In this article, we will see how to teach a deep learning class.
+```
+
+## GPT-2 base
+
+```
+How to teach a deep learning class? This question prompted the protagonist as he talks about a computer science class held at Stanford University. The series of lectures focuses on the AOC model, which allows for manipulating data across computational regions, by using a collection of possible types and relationships to a neural network. The series was loosely inspired by the book of the same name, Linear Algebra by David L. Ross. The main theme of the series was the connections of many graphs in a graph, a key principle in the AOC framework.
+ An example of AOC programming, a popular approach to exploring neural networks, is Neural Networks in the Presentational Language ( NLM ), a 2008 BBC documentary film developed for the BBC. The nLM program Column Parallel Machines allows users to parallel processes in a machine learning model, to apply a reconstructed representation of a single row on a table, or simply to perform a operations like sort or delete on the saved data.
+ = = = Design and production = = =
+ Set within the framework of NLM is the Inverse Bayesian System, an understanding of the neural network problem, which allows applications to be written using a number of models. In 2008 Béla Marcum created the working version of the Inverse Bayesian System as the initial source code
+ ```
