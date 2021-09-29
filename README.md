@@ -168,18 +168,18 @@ We used a 12-layer, 768-hidden, 12M parameters  pre-trained uncased model card i
 <!-- <img src='./imgs/BERT_BASE_LOSS.png' width="40%"> -->
 
 <p align="left">
-    <img src='./imgs/BERT_BASE_RUNTIME.png' width="420" height="305">
-    <img src='./imgs/BERT_BASE_SAMPLES.png' width="420" height="305">
+    <img src='./imgs/BERT_BASE_RUNTIME.png' width="410" height="300">
+    <img src='./imgs/BERT_BASE_SAMPLES.png' width="410" height="300">
 </p>
 
 <p align="left">
-    <img src='./imgs/BERT_BASE_STEPS.png' width="420" height="305">
-    <img src='./imgs/PARAMETERS.png' width="420" height="305">
+    <img src='./imgs/BERT_BASE_STEPS.png' width="410" height="300">
+    <img src='./imgs/PARAMETERS.png' width="410" height="300">
 </p>
 
 <p align="left">
-    <img src='./imgs/EVALUATION_LOSS.png' width="420" height="305">
-    <img src='./imgs/EVALUATION_ACCURACY.png' width="420" height="305">
+    <img src='./imgs/EVALUATION_LOSS.png' width="410" height="300">
+    <img src='./imgs/EVALUATION_ACCURACY.png' width="410" height="300">
 </p>
 
 <!-- <img src='./imgs/BERT_BASE_RUNTIME.png' width="40%"> -->
