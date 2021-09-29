@@ -258,3 +258,16 @@ The plot below shows that there is no significant accuracy difference on tasks s
 <p align="left">
     <img src="./imgs/cased_vs_uncased.png" width="600" height="300">
 </p>
+
+
+# Language modeling 
+
+We don't have the resources to run GPT-3 model. Instead, we compared GPT-2 models with different sizes — base, medium and large. Additionally, we compare them to GPT-NEO which is a GPT-3 like model with much less number of parameters. We demonsrated our results (evaluation perplexity) on Wikitext-2 dataset. 
+
+| Setting     |zero-shot|fine-tune|# parameters|
+| :--------:  |:-------:| :------:|:----------:|
+| GPT-2 base  | 29.9 | 23.4 | 117M |
+|GPT-2 medium | 21.7 | 17.5 | 345M |
+|GPT-2 large  | 19.4 | 16.0 | 774M |
+|GPT-NEO base | 28.9 | 23.2 | 125M |
+|GPT-NEO large| 14.6 | 12.7 | 1300M|
